@@ -99,17 +99,17 @@ public class Rule implements Comparable {
      * @return DOCUMENT ME!
      */
     public int compareTo(Rule that) {
-        int answer = this.importPrecedence - that.importPrecedence;
+        double answer = this.importPrecedence - that.importPrecedence;
 
         if (answer == 0) {
-            answer = (int) Math.round(this.priority - that.priority);
+            answer = this.priority - that.priority;
 
             if (answer == 0) {
                 answer = this.appearenceCount - that.appearenceCount;
             }
         }
 
-        return answer;
+        return answer < 0 ? -1 : answer > 0 ? 1 : 0;
     }
 
     public String toString() {

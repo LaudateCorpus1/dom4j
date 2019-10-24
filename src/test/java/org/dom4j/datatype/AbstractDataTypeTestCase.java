@@ -7,13 +7,13 @@
 
 package org.dom4j.datatype;
 
-import java.util.Iterator;
-import java.util.List;
-
 import org.dom4j.AbstractTestCase;
 import org.dom4j.Attribute;
 import org.dom4j.Element;
 import org.dom4j.Node;
+
+import java.util.Iterator;
+import java.util.List;
 
 /**
  * Abstract base class useful for implementation inheritence for testing XML
@@ -22,7 +22,7 @@ import org.dom4j.Node;
  * @author <a href="mailto:jstrachan@apache.org">James Strachan </a>
  * @version $Revision$
  */
-public class AbstractDataTypeTestCase extends AbstractTestCase {
+public abstract class AbstractDataTypeTestCase extends AbstractTestCase {
     // Implementation methods
     // -------------------------------------------------------------------------
     protected void testNodes(String xpath, Class type) {

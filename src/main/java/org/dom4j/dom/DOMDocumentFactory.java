@@ -166,7 +166,7 @@ public class DOMDocumentFactory extends DocumentFactory implements
         return document;
     }
 
-    @Override
+    
     public Object getFeature(String feature, String version) {
         throw new NotImplementedException();
     }

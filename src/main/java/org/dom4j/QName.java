@@ -339,19 +339,19 @@ public class QName implements Serializable {
 
     private static void validateName(String name) {
         if (!RE_NAME.matcher(name).matches()) {
-            throw new IllegalArgumentException(String.format("Illegal character in name: '%s'.", name));
+            throw new IllegalArgumentException("Illegal character in name: '" + name + "'.");
         }
     }
 
     protected static void validateNCName(String ncname) {
         if (!RE_NCNAME.matcher(ncname).matches()) {
-            throw new IllegalArgumentException(String.format("Illegal character in local name: '%s'.", ncname));
+            throw new IllegalArgumentException("Illegal character in local name: '" + ncname + "'.");
         }
     }
 
     private static void validateQName(String qname) {
         if (!RE_QNAME.matcher(qname).matches()) {
-            throw new IllegalArgumentException(String.format("Illegal character in qualified name: '%s'.", qname));
+            throw new IllegalArgumentException("Illegal character in qualified name: '" + qname + "'.");
         }
     }
 }

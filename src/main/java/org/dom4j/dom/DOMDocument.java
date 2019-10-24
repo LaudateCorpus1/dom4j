@@ -197,62 +197,62 @@ public class DOMDocument extends DefaultDocument implements Document {
         return DOMNodeHelper.hasAttributes(this);
     }
 
-    @Override
+    
     public String getBaseURI() {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public short compareDocumentPosition(Node other) throws DOMException {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public String getTextContent() throws DOMException {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public void setTextContent(String textContent) throws DOMException {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public boolean isSameNode(Node other) {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public String lookupPrefix(String namespaceURI) {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public boolean isDefaultNamespace(String namespaceURI) {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public String lookupNamespaceURI(String prefix) {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public boolean isEqualNode(Node arg) {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public Object getFeature(String feature, String version) {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public Object setUserData(String key, Object data, UserDataHandler handler) {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public Object getUserData(String key) {
         throw new NotImplementedException();
     }
@@ -356,72 +356,72 @@ public class DOMDocument extends DefaultDocument implements Document {
         return DOMNodeHelper.asDOMElement(elementByID(elementId));
     }
 
-    @Override
+    
     public String getInputEncoding() {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public String getXmlEncoding() {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public boolean getXmlStandalone() {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public void setXmlStandalone(boolean xmlStandalone) throws DOMException {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public String getXmlVersion() {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public void setXmlVersion(String xmlVersion) throws DOMException {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public boolean getStrictErrorChecking() {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public void setStrictErrorChecking(boolean strictErrorChecking) {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public String getDocumentURI() {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public void setDocumentURI(String documentURI) {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public Node adoptNode(Node source) throws DOMException {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public DOMConfiguration getDomConfig() {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public void normalizeDocument() {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public Node renameNode(Node n, String namespaceURI, String qualifiedName) throws DOMException {
         throw new NotImplementedException();
     }

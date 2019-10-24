@@ -170,62 +170,62 @@ public class DOMEntityReference extends DefaultEntity implements
         return DOMNodeHelper.hasAttributes(this);
     }
 
-    @Override
+    
     public String getBaseURI() {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public short compareDocumentPosition(Node other) throws DOMException {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public String getTextContent() throws DOMException {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public void setTextContent(String textContent) throws DOMException {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public boolean isSameNode(Node other) {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public String lookupPrefix(String namespaceURI) {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public boolean isDefaultNamespace(String namespaceURI) {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public String lookupNamespaceURI(String prefix) {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public boolean isEqualNode(Node arg) {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public Object getFeature(String feature, String version) {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public Object setUserData(String key, Object data, UserDataHandler handler) {
         throw new NotImplementedException();
     }
 
-    @Override
+    
     public Object getUserData(String key) {
         throw new NotImplementedException();
     }

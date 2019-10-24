@@ -189,6 +189,7 @@ public class SchemaParser {
     private void onDatatypeElement(Element xsdElement,
             DocumentFactory parentFactory) {
         String name = xsdElement.attributeValue("name");
+        name = name == null ? xsdElement.attributeValue("ref") : name;
         String type = xsdElement.attributeValue("type");
         QName qname = getQName(name);
 

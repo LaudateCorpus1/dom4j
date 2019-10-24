@@ -23,14 +23,14 @@ import org.dom4j.util.NodeComparator;
  * @author <a href="mailto:jstrachan@apache.org">James Strachan </a>
  * @version $Revision$
  */
-public class AbstractTestCase extends TestCase {
+public abstract class AbstractTestCase extends TestCase {
     protected Document document;
 
-    protected AbstractTestCase() {
+    public AbstractTestCase() {
         super();
     }
 
-    protected AbstractTestCase(String name) {
+    public AbstractTestCase(String name) {
         super(name);
     }
 
