@@ -30,7 +30,7 @@ public class ValueOfTest extends AbstractTestCase {
             "name(child::node())", "name(parent::*)", "name(../*)",
             "name(../child::node())", "local-name()", "local-name(..)",
             "local-name(parent::*)", "local-name(../*)", "parent::*",
-            "name(/.)", "name(/child::node())", "name(/*)", "", "src/test", "../*",
+            "name(/.)", "name(/child::node())", "name(/*)", "src/test", "../*",
             "../child::node()", "/.", "/*", "*", "/child::node()"};
 
     public static void main(String[] args) {

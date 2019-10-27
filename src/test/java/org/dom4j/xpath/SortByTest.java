@@ -33,7 +33,7 @@ public class SortByTest extends AbstractTestCase {
 
         log("Number of SPEAKER instances: " + list.size());
 
-        List noDuplicates = document.selectNodes("//SPEAKER", "", true);
+        List noDuplicates = document.selectNodes("//SPEAKER", "NOT_EMPTY", true);
 
         log("Number of distinct SPEAKER instances: " + noDuplicates.size());
 
