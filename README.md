@@ -7,7 +7,7 @@ This is an Atlassian fork of dom4j
 
 See original source here https://github.com/dom4j/dom4j
 
-Track changes on on the Atlassian fork here https://github.com/atlassian/dom4j
+Track changes on the Atlassian fork here https://github.com/atlassian/dom4j
 
 ## Supported Branches 
 

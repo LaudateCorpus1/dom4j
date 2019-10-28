@@ -18,7 +18,6 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.Text;
 import org.w3c.dom.UserDataHandler;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 /**
  * <p>
@@ -161,62 +160,62 @@ public class DOMCDATA extends DefaultCDATA implements org.w3c.dom.CDATASection {
 
     
     public String getBaseURI() {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public short compareDocumentPosition(Node other) throws DOMException {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public String getTextContent() throws DOMException {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public void setTextContent(String textContent) throws DOMException {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public boolean isSameNode(Node other) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public String lookupPrefix(String namespaceURI) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public boolean isDefaultNamespace(String namespaceURI) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public String lookupNamespaceURI(String prefix) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public boolean isEqualNode(Node arg) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public Object getFeature(String feature, String version) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public Object setUserData(String key, Object data, UserDataHandler handler) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public Object getUserData(String key) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     // org.w3c.dom.CharacterData interface
@@ -286,17 +285,17 @@ public class DOMCDATA extends DefaultCDATA implements org.w3c.dom.CDATASection {
 
     
     public boolean isElementContentWhitespace() {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public String getWholeText() {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public Text replaceWholeText(String content) throws DOMException {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     // Implementation methods

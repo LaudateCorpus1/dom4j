@@ -24,7 +24,6 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.TypeInfo;
 import org.w3c.dom.UserDataHandler;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 /**
  * <p>
@@ -182,62 +181,62 @@ public class DOMElement extends DefaultElement implements org.w3c.dom.Element {
 
     
     public String getBaseURI() {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public short compareDocumentPosition(Node other) throws DOMException {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public String getTextContent() throws DOMException {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public void setTextContent(String textContent) throws DOMException {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public boolean isSameNode(Node other) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public String lookupPrefix(String namespaceURI) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public boolean isDefaultNamespace(String namespaceURI) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public String lookupNamespaceURI(String prefix) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public boolean isEqualNode(Node arg) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public Object getFeature(String feature, String version) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public Object setUserData(String key, Object data, UserDataHandler handler) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public Object getUserData(String key) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     // org.w3c.dom.Element interface
@@ -394,22 +393,22 @@ public class DOMElement extends DefaultElement implements org.w3c.dom.Element {
 
     
     public TypeInfo getSchemaTypeInfo() {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public void setIdAttribute(String name, boolean isId) throws DOMException {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public void setIdAttributeNS(String namespaceURI, String localName, boolean isId) throws DOMException {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public void setIdAttributeNode(Attr idAttr, boolean isId) throws DOMException {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     // Implementation methods

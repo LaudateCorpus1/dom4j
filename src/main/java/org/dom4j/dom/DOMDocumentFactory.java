@@ -23,7 +23,6 @@ import org.dom4j.QName;
 import org.dom4j.Text;
 import org.dom4j.util.SingletonStrategy;
 import org.w3c.dom.DOMException;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 /**
  * <p>
@@ -168,7 +167,7 @@ public class DOMDocumentFactory extends DocumentFactory implements
 
     
     public Object getFeature(String feature, String version) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     // Implementation methods

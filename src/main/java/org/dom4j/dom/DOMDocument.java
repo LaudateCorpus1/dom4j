@@ -24,7 +24,6 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.w3c.dom.ProcessingInstruction;
 import org.w3c.dom.UserDataHandler;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 /**
  * <p>
@@ -199,62 +198,62 @@ public class DOMDocument extends DefaultDocument implements Document {
 
     
     public String getBaseURI() {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public short compareDocumentPosition(Node other) throws DOMException {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public String getTextContent() throws DOMException {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public void setTextContent(String textContent) throws DOMException {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public boolean isSameNode(Node other) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public String lookupPrefix(String namespaceURI) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public boolean isDefaultNamespace(String namespaceURI) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public String lookupNamespaceURI(String prefix) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public boolean isEqualNode(Node arg) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public Object getFeature(String feature, String version) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public Object setUserData(String key, Object data, UserDataHandler handler) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public Object getUserData(String key) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     // org.w3c.dom.Document interface
@@ -358,72 +357,72 @@ public class DOMDocument extends DefaultDocument implements Document {
 
     
     public String getInputEncoding() {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public String getXmlEncoding() {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public boolean getXmlStandalone() {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public void setXmlStandalone(boolean xmlStandalone) throws DOMException {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public String getXmlVersion() {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public void setXmlVersion(String xmlVersion) throws DOMException {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public boolean getStrictErrorChecking() {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public void setStrictErrorChecking(boolean strictErrorChecking) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public String getDocumentURI() {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public void setDocumentURI(String documentURI) {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public Node adoptNode(Node source) throws DOMException {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public DOMConfiguration getDomConfig() {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public void normalizeDocument() {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     
     public Node renameNode(Node n, String namespaceURI, String qualifiedName) throws DOMException {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     // Implementation methods
