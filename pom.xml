@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>dom4j</groupId>
     <artifactId>dom4j</artifactId>
-    <version>1.6.2-SNAPSHOT</version>
+    <version>1.6.1-atlassian-1-SNAPSHOT</version>
     <name>dom4j</name>
     <description>dom4j: the flexible XML framework for Java</description>
     <url>http://dom4j.org</url>
