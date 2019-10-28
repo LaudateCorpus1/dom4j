@@ -38,7 +38,6 @@ public class XPathPattern implements org.dom4j.rule.Pattern {
     private String text;
 
     private Pattern pattern;
-
     private Context context;
 
     public XPathPattern(Pattern pattern) {
