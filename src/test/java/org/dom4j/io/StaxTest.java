@@ -10,6 +10,7 @@ package org.dom4j.io;
 import junit.textui.TestRunner;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.StringWriter;
 
@@ -50,7 +51,7 @@ public class StaxTest extends AbstractTestCase {
         try {
             File file = getFile("/xml/russArticle.xml");
             STAXEventReader xmlReader = new STAXEventReader();
-            Document doc = xmlReader.readDocument(new FileReader(file));
+            Document doc = xmlReader.readDocument(new FileInputStream(file));
 
             assertEquals("russArticle.xml encoding wasn't correct", "koi8-r",
                     doc.getXMLEncoding());
@@ -61,7 +62,7 @@ public class StaxTest extends AbstractTestCase {
 
             String output = writer.toString();
             String xmlDecl = output.substring(0, output.indexOf("?>") + 2);
-            String expected = "<?xml version=\'1.0\' encoding=\'koi8-r\'?>";
+            String expected = "<?xml version=\"1.0\" encoding=\"koi8-r\"?>";
             assertEquals("Unexpected xml declaration", expected, xmlDecl);
             System.out.println(output);
         } catch (Exception e) {
