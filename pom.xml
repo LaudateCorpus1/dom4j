@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-         xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <groupId>dom4j</groupId>
     <artifactId>dom4j</artifactId>
     <version>1.6.1-atlassian-1-SNAPSHOT</version>
+
     <name>dom4j</name>
     <description>dom4j: the flexible XML framework for Java</description>
     <url>http://dom4j.org</url>
     <inceptionYear>2001</inceptionYear>
-
     <organization>
         <name>MetaStuff Ltd.</name>
         <url>http://sourceforge.net/projects/dom4j</url>
     </organization>
-
-    <scm>
-        <connection>scm:git:git@github.com:atlassian/dom4j.git</connection>
-        <developerConnection>scm:git:git@github.com:atlassian/dom4j.git</developerConnection>
-        <url>https://github.com/atlassian/dom4j</url>
-        <tag>HEAD</tag>
-    </scm>
-
     <licenses>
         <license>
             <name>MetaStuff, Ltd License</name>
@@ -31,6 +22,12 @@
         </license>
     </licenses>
 
+    <scm>
+        <connection>scm:git:git@github.com:atlassian/dom4j.git</connection>
+        <developerConnection>scm:git:git@github.com:atlassian/dom4j.git</developerConnection>
+        <url>https://github.com/atlassian/dom4j</url>
+        <tag>HEAD</tag>
+    </scm>
     <distributionManagement>
         <repository>
             <id>atlassian-3rdparty</id>
@@ -41,6 +38,10 @@
             <url>https://packages.atlassian.com/maven/3rdparty-snapshot</url>
         </snapshotRepository>
     </distributionManagement>
+
+    <properties>
+        <doclint>none</doclint>
+    </properties>
 
     <dependencies>
         <dependency>
@@ -100,6 +101,7 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -157,6 +159,7 @@
             </plugin>
         </plugins>
     </build>
+
     <reporting>
         <plugins>
             <plugin>
