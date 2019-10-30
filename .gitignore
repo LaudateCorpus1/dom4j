@@ -1,6 +1,7 @@
 velocity.log*
 build
 target
+classes
 dist
 junit*.properties
 *.log
