@@ -17,10 +17,7 @@ import org.dom4j.DocumentFactory;
 import org.dom4j.Namespace;
 import org.dom4j.QName;
 import org.dom4j.tree.DefaultElement;
-import org.w3c.dom.DOMException;
-import org.w3c.dom.Document;
-import org.w3c.dom.NamedNodeMap;
-import org.w3c.dom.NodeList;
+import org.w3c.dom.*;
 
 /** <p><code>DOMAttribute</code> implements an XML element which 
   * supports the W3C DOM API.</p>
@@ -162,8 +159,56 @@ public class DOMElement extends DefaultElement implements org.w3c.dom.Element {
     public boolean hasAttributes() {
         return DOMNodeHelper.hasAttributes(this);
     }
-    
-    
+
+    public String getBaseURI() {
+        return null;
+    }
+
+    public short compareDocumentPosition(Node other) throws DOMException {
+        return 0;
+    }
+
+    public String getTextContent() throws DOMException {
+        return null;
+    }
+
+    public void setTextContent(String textContent) throws DOMException {
+
+    }
+
+    public boolean isSameNode(Node other) {
+        return false;
+    }
+
+    public String lookupPrefix(String namespaceURI) {
+        return null;
+    }
+
+    public boolean isDefaultNamespace(String namespaceURI) {
+        return false;
+    }
+
+    public String lookupNamespaceURI(String prefix) {
+        return null;
+    }
+
+    public boolean isEqualNode(Node arg) {
+        return false;
+    }
+
+    public Object getFeature(String feature, String version) {
+        return null;
+    }
+
+    public Object setUserData(String key, Object data, UserDataHandler handler) {
+        return null;
+    }
+
+    public Object getUserData(String key) {
+        return null;
+    }
+
+
     // org.w3c.dom.Element interface
     //-------------------------------------------------------------------------            
     public String getTagName() {
@@ -296,7 +341,23 @@ public class DOMElement extends DefaultElement implements org.w3c.dom.Element {
         return attribute(namespaceURI, localName) != null;
     }
 
-    
+    public TypeInfo getSchemaTypeInfo() {
+        return null;
+    }
+
+    public void setIdAttribute(String name, boolean isId) throws DOMException {
+
+    }
+
+    public void setIdAttributeNS(String namespaceURI, String localName, boolean isId) throws DOMException {
+
+    }
+
+    public void setIdAttributeNode(Attr idAttr, boolean isId) throws DOMException {
+
+    }
+
+
     // Implementation methods
     //-------------------------------------------------------------------------            
     protected DocumentFactory getDocumentFactory() {

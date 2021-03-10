@@ -227,7 +227,7 @@ public class DocumentHelper {
       * existed on the path or were created by this method.
       */
     public static Element makeElement(Branch source, String path) {
-        StringTokenizer enum = new StringTokenizer( path, "/" );
+        StringTokenizer tokenizer = new StringTokenizer( path, "/" );
         Element parent;
         if ( source instanceof Document ) {
             Document document = (Document) source;
@@ -235,7 +235,7 @@ public class DocumentHelper {
             
             // lets throw a NoSuchElementException 
             // if we are given an empty path
-            String name = enum.nextToken();
+            String name = tokenizer.nextToken();
             if ( parent == null ) {
                 parent = document.addElement( name );
             }
@@ -244,8 +244,8 @@ public class DocumentHelper {
             parent = (Element) source;
         }
         Element element = null;
-        while ( enum.hasMoreTokens() ) {
-            String name = enum.nextToken();
+        while ( tokenizer.hasMoreTokens() ) {
+            String name = tokenizer.nextToken();
             if ( name.indexOf( ':' ) > 0 ) {
                 element = parent.element( parent.getQName( name ) );
             }

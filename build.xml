@@ -13,7 +13,7 @@
 
     <echo message="----------- ${Name} ${version} [${year}] ------------"/>
 
-    <property name="build.compiler" value="classic"/>
+    <property name="build.compiler" value="modern"/>
     <property name="debug" value="on"/>
     <property name="optimize" value="on"/>
     <property name="deprecation" value="off"/>
@@ -78,6 +78,13 @@
     <taskdef name="fop" classname="org.apache.fop.tools.anttasks.Fop">
     	<classpath refid="fop.classpath"/>
     </taskdef>
+
+    <path id="classpath">
+      <fileset dir="${lib.dir}">
+        <include name="**/*.jar" />
+      </fileset>
+      <pathelement location="${build.dest}" />
+    </path>
   </target>
 
   <!-- =================================================================== -->
@@ -177,7 +184,9 @@
            destdir="${build.dest}"
            debug="${debug}"
            optimize="${optimize}"
-           deprecation="${deprecation}"/>
+           deprecation="${deprecation}">
+      <classpath refid="classpath" />
+    </javac>
   </target>
 
   <!-- =================================================================== -->
@@ -188,7 +197,9 @@
            destdir="${build.dest}"
            debug="${debug}"
            optimize="${optimize}"
-           deprecation="${deprecation}"/>
+           deprecation="${deprecation}">
+      <classpath refid="classpath" />
+    </javac>
     <copy  todir="${build.dest}">
       <fileset dir="${test.dir}" excludes="**/*.java"/>
     </copy>
@@ -509,6 +520,9 @@
       <classpath>
         <pathelement location="${build.dest}" />
         <pathelement path="${java.class.path}" />
+        <fileset dir="${lib.dir}">
+          <include name="**/*.jar" />
+        </fileset>
       </classpath>
 
       <batchtest fork="yes" todir="${build.dir}/test-results/xml">

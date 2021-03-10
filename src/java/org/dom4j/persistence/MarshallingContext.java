@@ -3,7 +3,6 @@ package org.dom4j.persistence;
 import java.net.URL;
 
 /**
- * Überschrift:   HL7 API
  * Beschreibung:
  * Copyright:     Copyright (c) 2001
  * Organisation:  ceyoniq healthcare

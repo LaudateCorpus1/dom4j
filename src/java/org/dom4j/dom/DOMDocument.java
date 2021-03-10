@@ -14,9 +14,7 @@ import java.util.ArrayList;
 import org.dom4j.DocumentFactory;
 import org.dom4j.QName;
 import org.dom4j.tree.DefaultDocument;
-import org.w3c.dom.DOMException;
-import org.w3c.dom.NamedNodeMap;
-import org.w3c.dom.NodeList;
+import org.w3c.dom.*;
 
 /** <p><code>DOMDocument</code> implements an XML document which 
   * supports the W3C DOM API.</p>
@@ -173,8 +171,56 @@ public class DOMDocument extends DefaultDocument implements org.w3c.dom.Document
     public boolean hasAttributes() {
         return DOMNodeHelper.hasAttributes(this);
     }
-    
-    
+
+    public String getBaseURI() {
+        return null;
+    }
+
+    public short compareDocumentPosition(Node other) throws DOMException {
+        return 0;
+    }
+
+    public String getTextContent() throws DOMException {
+        return null;
+    }
+
+    public void setTextContent(String textContent) throws DOMException {
+
+    }
+
+    public boolean isSameNode(Node other) {
+        return false;
+    }
+
+    public String lookupPrefix(String namespaceURI) {
+        return null;
+    }
+
+    public boolean isDefaultNamespace(String namespaceURI) {
+        return false;
+    }
+
+    public String lookupNamespaceURI(String prefix) {
+        return null;
+    }
+
+    public boolean isEqualNode(Node arg) {
+        return false;
+    }
+
+    public Object getFeature(String feature, String version) {
+        return null;
+    }
+
+    public Object setUserData(String key, Object data, UserDataHandler handler) {
+        return null;
+    }
+
+    public Object getUserData(String key) {
+        return null;
+    }
+
+
     // org.w3c.dom.Document interface
     //-------------------------------------------------------------------------            
     public NodeList getElementsByTagName(String name) {
@@ -271,9 +317,64 @@ public class DOMDocument extends DefaultDocument implements org.w3c.dom.Document
     public org.w3c.dom.Element getElementById(String elementId) {
         return DOMNodeHelper.asDOMElement( elementByID( elementId ) );
     }
-    
-    
-    
+
+    public String getInputEncoding() {
+        return null;
+    }
+
+    public String getXmlEncoding() {
+        return null;
+    }
+
+    public boolean getXmlStandalone() {
+        return false;
+    }
+
+    public void setXmlStandalone(boolean xmlStandalone) throws DOMException {
+
+    }
+
+    public String getXmlVersion() {
+        return null;
+    }
+
+    public void setXmlVersion(String xmlVersion) throws DOMException {
+
+    }
+
+    public boolean getStrictErrorChecking() {
+        return false;
+    }
+
+    public void setStrictErrorChecking(boolean strictErrorChecking) {
+
+    }
+
+    public String getDocumentURI() {
+        return null;
+    }
+
+    public void setDocumentURI(String documentURI) {
+
+    }
+
+    public Node adoptNode(Node source) throws DOMException {
+        return null;
+    }
+
+    public DOMConfiguration getDomConfig() {
+        return null;
+    }
+
+    public void normalizeDocument() {
+
+    }
+
+    public Node renameNode(Node n, String namespaceURI, String qualifiedName) throws DOMException {
+        return null;
+    }
+
+
     // Implementation methods
     //-------------------------------------------------------------------------            
     protected DocumentFactory getDocumentFactory() {

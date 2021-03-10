@@ -11,10 +11,7 @@ package org.dom4j.dom;
 
 import org.dom4j.Element;
 import org.dom4j.tree.DefaultComment;
-import org.w3c.dom.DOMException;
-import org.w3c.dom.Document;
-import org.w3c.dom.NamedNodeMap;
-import org.w3c.dom.NodeList;
+import org.w3c.dom.*;
 
 /** <p><code>DOMText</code> implements a Text node which 
   * supports the W3C DOM API.</p>
@@ -148,7 +145,55 @@ public class DOMComment extends DefaultComment implements org.w3c.dom.Comment {
     public boolean hasAttributes() {
         return DOMNodeHelper.hasAttributes(this);
     }
-    
+
+    public String getBaseURI() {
+        return null;
+    }
+
+    public short compareDocumentPosition(Node other) throws DOMException {
+        return 0;
+    }
+
+    public String getTextContent() throws DOMException {
+        return null;
+    }
+
+    public void setTextContent(String textContent) throws DOMException {
+
+    }
+
+    public boolean isSameNode(Node other) {
+        return false;
+    }
+
+    public String lookupPrefix(String namespaceURI) {
+        return null;
+    }
+
+    public boolean isDefaultNamespace(String namespaceURI) {
+        return false;
+    }
+
+    public String lookupNamespaceURI(String prefix) {
+        return null;
+    }
+
+    public boolean isEqualNode(Node arg) {
+        return false;
+    }
+
+    public Object getFeature(String feature, String version) {
+        return null;
+    }
+
+    public Object setUserData(String key, Object data, UserDataHandler handler) {
+        return null;
+    }
+
+    public Object getUserData(String key) {
+        return null;
+    }
+
     // org.w3c.dom.CharacterData interface
     //-------------------------------------------------------------------------        
     public String getData() throws DOMException {

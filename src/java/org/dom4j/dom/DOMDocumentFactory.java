@@ -141,6 +141,10 @@ public class DOMDocumentFactory extends DocumentFactory implements org.w3c.dom.D
         return document;
    }
 
+    public Object getFeature(String feature, String version) {
+        return null;
+    }
+
 
     // Implementation methods
 
