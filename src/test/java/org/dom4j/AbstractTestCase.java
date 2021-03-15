@@ -18,7 +18,7 @@ import org.dom4j.util.NodeComparator;
   * @author <a href="mailto:jstrachan@apache.org">James Strachan</a>
   * @version $Revision$
   */
-public class AbstractTestCase extends TestCase {
+public abstract class AbstractTestCase extends TestCase {
 
     protected static final boolean COMPARE_TEXT = false;
     

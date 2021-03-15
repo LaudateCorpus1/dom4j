@@ -24,7 +24,7 @@ import org.dom4j.Node;
   * @author <a href="mailto:jstrachan@apache.org">James Strachan</a>
   * @version $Revision$
   */
-public class AbstractDataTypeTest extends AbstractTestCase {
+public abstract class AbstractDataTypeTest extends AbstractTestCase {
 
     protected boolean VERBOSE = true;
 
