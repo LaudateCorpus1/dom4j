@@ -29,7 +29,7 @@ import org.jaxen.SimpleNamespaceContext;
 import org.jaxen.VariableContext;
 import org.jaxen.XPath;
 import org.jaxen.dom4j.Dom4jXPath;
-import org.jaxen.saxpath.SAXPathException;
+import org.saxpath.SAXPathException;
 
 
 /** <p>Default implementation of {@link org.dom4j.XPath} which uses the
