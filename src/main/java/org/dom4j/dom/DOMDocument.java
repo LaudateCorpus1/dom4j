@@ -173,51 +173,51 @@ public class DOMDocument extends DefaultDocument implements org.w3c.dom.Document
     }
 
     public String getBaseURI() {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public short compareDocumentPosition(Node other) throws DOMException {
-        return 0;
+        throw new UnsupportedOperationException();
     }
 
     public String getTextContent() throws DOMException {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public void setTextContent(String textContent) throws DOMException {
-
+        throw new UnsupportedOperationException();
     }
 
     public boolean isSameNode(Node other) {
-        return false;
+        throw new UnsupportedOperationException();
     }
 
     public String lookupPrefix(String namespaceURI) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public boolean isDefaultNamespace(String namespaceURI) {
-        return false;
+        throw new UnsupportedOperationException();
     }
 
     public String lookupNamespaceURI(String prefix) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public boolean isEqualNode(Node arg) {
-        return false;
+        throw new UnsupportedOperationException();
     }
 
     public Object getFeature(String feature, String version) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public Object setUserData(String key, Object data, UserDataHandler handler) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public Object getUserData(String key) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
 
@@ -319,59 +319,59 @@ public class DOMDocument extends DefaultDocument implements org.w3c.dom.Document
     }
 
     public String getInputEncoding() {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public String getXmlEncoding() {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public boolean getXmlStandalone() {
-        return false;
+        throw new UnsupportedOperationException();
     }
 
     public void setXmlStandalone(boolean xmlStandalone) throws DOMException {
-
+        throw new UnsupportedOperationException();
     }
 
     public String getXmlVersion() {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public void setXmlVersion(String xmlVersion) throws DOMException {
-
+        throw new UnsupportedOperationException();
     }
 
     public boolean getStrictErrorChecking() {
-        return false;
+        throw new UnsupportedOperationException();
     }
 
     public void setStrictErrorChecking(boolean strictErrorChecking) {
-
+        throw new UnsupportedOperationException();
     }
 
     public String getDocumentURI() {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public void setDocumentURI(String documentURI) {
-
+        throw new UnsupportedOperationException();
     }
 
     public Node adoptNode(Node source) throws DOMException {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public DOMConfiguration getDomConfig() {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public void normalizeDocument() {
-
+        throw new UnsupportedOperationException();
     }
 
     public Node renameNode(Node n, String namespaceURI, String qualifiedName) throws DOMException {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
 

@@ -142,7 +142,7 @@ public class DOMDocumentFactory extends DocumentFactory implements org.w3c.dom.D
    }
 
     public Object getFeature(String feature, String version) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
 

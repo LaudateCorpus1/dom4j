@@ -150,51 +150,51 @@ public class DOMEntityReference extends DefaultEntity implements org.w3c.dom.Ent
     }
 
     public String getBaseURI() {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public short compareDocumentPosition(Node other) throws DOMException {
-        return 0;
+        throw new UnsupportedOperationException();
     }
 
     public String getTextContent() throws DOMException {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public void setTextContent(String textContent) throws DOMException {
-
+        throw new UnsupportedOperationException();
     }
 
     public boolean isSameNode(Node other) {
-        return false;
+        throw new UnsupportedOperationException();
     }
 
     public String lookupPrefix(String namespaceURI) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public boolean isDefaultNamespace(String namespaceURI) {
-        return false;
+        throw new UnsupportedOperationException();
     }
 
     public String lookupNamespaceURI(String prefix) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public boolean isEqualNode(Node arg) {
-        return false;
+        throw new UnsupportedOperationException();
     }
 
     public Object getFeature(String feature, String version) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public Object setUserData(String key, Object data, UserDataHandler handler) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public Object getUserData(String key) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 }
 

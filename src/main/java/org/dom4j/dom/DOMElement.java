@@ -161,51 +161,51 @@ public class DOMElement extends DefaultElement implements org.w3c.dom.Element {
     }
 
     public String getBaseURI() {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public short compareDocumentPosition(Node other) throws DOMException {
-        return 0;
+        throw new UnsupportedOperationException();
     }
 
     public String getTextContent() throws DOMException {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public void setTextContent(String textContent) throws DOMException {
-
+        throw new UnsupportedOperationException();
     }
 
     public boolean isSameNode(Node other) {
-        return false;
+        throw new UnsupportedOperationException();
     }
 
     public String lookupPrefix(String namespaceURI) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public boolean isDefaultNamespace(String namespaceURI) {
-        return false;
+        throw new UnsupportedOperationException();
     }
 
     public String lookupNamespaceURI(String prefix) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public boolean isEqualNode(Node arg) {
-        return false;
+        throw new UnsupportedOperationException();
     }
 
     public Object getFeature(String feature, String version) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public Object setUserData(String key, Object data, UserDataHandler handler) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public Object getUserData(String key) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
 
@@ -342,19 +342,19 @@ public class DOMElement extends DefaultElement implements org.w3c.dom.Element {
     }
 
     public TypeInfo getSchemaTypeInfo() {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public void setIdAttribute(String name, boolean isId) throws DOMException {
-
+        throw new UnsupportedOperationException();
     }
 
     public void setIdAttributeNS(String namespaceURI, String localName, boolean isId) throws DOMException {
-
+        throw new UnsupportedOperationException();
     }
 
     public void setIdAttributeNode(Attr idAttr, boolean isId) throws DOMException {
-
+        throw new UnsupportedOperationException();
     }
 
 
