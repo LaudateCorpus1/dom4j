@@ -12,6 +12,8 @@ package org.dom4j.datatype;
 import java.io.StringReader;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.SimpleTimeZone;
+import java.util.TimeZone;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -29,6 +31,9 @@ import org.dom4j.io.SAXReader;
   * @version $Revision$
   */
 public class TestDatatype2 extends TestCase {
+    private static final int YEAR = 2001;
+    private static final int MONTH = 10;
+    private static final int DATE = 31;
 
     public static void main( String[] args ) {
         TestRunner.run( suite() );
@@ -225,19 +230,23 @@ public class TestDatatype2 extends TestCase {
     }
 
     private static String getDateString() {
-        //return dateTime in ISO8601 format
-        String yyyy=Integer.toString(year);
-        String mm=Integer.toString(month);
-        String dd=Integer.toString(date);
-        return yyyy+"-"+mm+"-"+dd;
+        // return dateTime in ISO8601 format
+        String yyyy = Integer.toString(YEAR);
+        String mm = Integer.toString(MONTH);
+        String dd = Integer.toString(DATE);
+
+        return yyyy + "-" + mm + "-" + dd + "Z";
     }
 
     private static Calendar getDate() {
-        Calendar calendar=new GregorianCalendar();
+        Calendar calendar = new GregorianCalendar();
         calendar.clear();
-        calendar.set( Calendar.YEAR, year );
-        calendar.set( Calendar.MONTH, month-1 );
-        calendar.set( Calendar.DAY_OF_MONTH, date );
+        calendar.set(Calendar.YEAR, YEAR);
+        calendar.set(Calendar.MONTH, MONTH - 1);
+        calendar.set(Calendar.DAY_OF_MONTH, DATE);
+        calendar.setTimeZone(TimeZone.getTimeZone("UTC"));
+        calendar.setTimeZone(new SimpleTimeZone(0, "XSD 'Z' timezone"));
+
         return calendar;
     }
 
