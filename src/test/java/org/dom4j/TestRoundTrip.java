@@ -102,14 +102,12 @@ public class TestRoundTrip extends AbstractTestCase {
 
     public void testJTidyRoundTrip() throws Exception {
         Document document = loadHTML( "readme.html" );
-  
-        //Document doc1 = roundTripText( document );
+
         Document doc1 = roundTripSAX( document );
         Document doc2 = roundTripDOM( doc1);
         Document doc3 = roundTripSAX( doc2 );
-        //Document doc4 = roundTripText( doc3 );
-        //Document doc5 = roundTripDOM( doc4 );
-        Document doc5 = roundTripDOM( doc3 );
+        Document doc4 = roundTripText( doc3 );
+        Document doc5 = roundTripDOM( doc4 );
         
         assertDocumentsEqual( document, doc5 );
     }
