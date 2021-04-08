@@ -18,6 +18,7 @@ import org.dom4j.rule.Pattern;
 import org.jaxen.VariableContext;
 
 import org.xml.sax.InputSource;
+import org.xml.sax.SAXException;
 
 /**
  * <p>
@@ -257,7 +258,9 @@ public final class DocumentHelper {
      * <code>parseText</code> parses the given text as an XML document and
      * returns the newly created Document.
      * </p>
-     * 
+     *
+     * Loading external DTD and entities is disabled (if it is possible) for security reasons.
+     *
      * @param text
      *            the XML text to be parsed
      * 
@@ -270,6 +273,14 @@ public final class DocumentHelper {
         Document result = null;
 
         SAXReader reader = new SAXReader();
+        try {
+            reader.setFeature("http://apache.org/xml/features/nonvalidating/load-external-dtd", false);
+            reader.setFeature("http://xml.org/sax/features/external-general-entities", false);
+            reader.setFeature("http://xml.org/sax/features/external-parameter-entities", false);
+        } catch (SAXException e) {
+            //Parse with external resources downloading allowed.
+        }
+
         String encoding = getEncoding(text);
 
         InputSource source = new InputSource(new StringReader(text));
