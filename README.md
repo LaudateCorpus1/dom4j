@@ -25,3 +25,4 @@ Simply use the release stage of "DOM4J - 1.6.x" plan.
 
 - See CHANGELOG.md for changes made after the fork
 - LICENCE.txt for licensing information
+
